@@ -5,10 +5,8 @@ import time
 # numero aleatorio
 numberSelected = random.randrange(101)
 
-# dica
 
-
-def dica():
+def dica():  # dica
     if number > numberSelected:
         print("Tente um numero menor")
     else:
