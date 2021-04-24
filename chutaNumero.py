@@ -2,8 +2,10 @@ import random
 import os
 import time
 
-# escolhendo o numero
+# numero aleatorio
 numberSelected = random.randrange(101)
+
+# dica
 
 
 def dica():
