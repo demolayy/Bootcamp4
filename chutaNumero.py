@@ -2,6 +2,7 @@ import random
 import os
 import time
 
+
 # escolhendo o numero
 numberSelected = random.randrange(101)
 
