@@ -3,11 +3,11 @@ import os
 import time
 
 # numero aleatorio
-numberSelected = random.randrange(101)
+numeroSelecionado = random.randrange(101)
 
 
 def dica():  # dica
-    if number > numberSelected:
+    if numero > numeroSelecionado:
         print("Tente um numero menor")
     else:
         print("Tente um numero maior")
@@ -28,14 +28,13 @@ while True:
         print("Você ainda não apertou o Enter")
         cls()
 
-number = None
-
+numero = None
+numeroSelecionado = random.randrange(101)
 while True:
     try:
-        print(numberSelected)
-        number = int(input('Chute um numero:'))
-        if type(number) == int:
-            if number == numberSelected:
+        numero = int(input('Chute um numero:'))
+        if type(numero) == int:
+            if numero == numeroSelecionado:
                 print("Muito bem você acertou!")
                 print("Você quer jogar novamente?")
                 retry = input('S/N?')
@@ -43,11 +42,10 @@ while True:
                     print("Obrigado por jogar!")
                     exit()
                 elif retry in ("S", "SIM"):
-                    print("vamos jogar novamente")
                     cls()
-                    numberSelected = random.randrange(101)
+                    numeroSelecionado = random.randrange(101)
                     continue
-            elif number != numberSelected:
+            elif numero != numeroSelecionado:
                 cls()
                 dica()
                 continue
